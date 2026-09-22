@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cabo Verde - Luxury Furniture &amp; Home Decor</title>
+  <meta name="description" content="Explore Cabo Verde's curated modern furniture collections. Featuring sofas, lounge chairs, storage beds, lighting, and bespoke interior design pieces.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS CDN for Standalone HTML -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              red: '#dc2626',
+              dark: '#171717',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Smooth scrollbar styling */
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+</head>
+<body class="font-sans antialiased text-neutral-900 bg-white selection:bg-red-600 selection:text-white">
+
+  <!-- ================================================================= -->
+  <!-- PART 1 OF 5: HEADER & NAVIGATION (part1_header.html)              -->
+  <!-- ================================================================= -->
+  <!-- Top Announcement Ticker Bar -->
+  <div id="cv-announcement-bar" class="bg-black text-white text-xs font-medium py-2.5 px-4 overflow-hidden relative select-none border-b border-neutral-800">
+    <div class="max-w-7xl mx-auto flex items-center justify-between text-[11px] sm:text-xs tracking-wider">
+      <div class="flex items-center gap-6 overflow-x-auto no-scrollbar whitespace-nowrap w-full justify-center">
+        <span class="inline-flex items-center gap-2">
+          <span class="text-red-500 font-bold">+</span>
+          <span>Up to 30% Off Stylish Furniture - Only At Cabo Verde</span>
+        </span>
+        <span class="hidden md:inline-flex items-center gap-2 text-neutral-400">
+          <span class="text-red-500 font-bold">+</span>
+          <span>Free White Glove Delivery on orders over $500</span>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Header -->
+  <header id="cv-main-header" class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-neutral-100 transition-all duration-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Left: Mobile Hamburger & Logo -->
+      <div class="flex items-center gap-3 md:gap-8">
+        <button id="cv-mobile-menu-btn" type="button" class="md:hidden p-2 text-neutral-800 hover:text-red-600 focus:outline-none" aria-label="Toggle Navigation Menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+
+        <a href="#home" class="flex items-center gap-2.5 group">
+          <div class="w-9 h-9 rounded-full bg-red-600 flex items-center justify-center text-white font-black text-sm tracking-tighter shadow-md shadow-red-500/20 group-hover:scale-105 transition-transform">
+            CV
+          </div>
+          <div class="flex flex-col">
+            <span class="font-extrabold text-xl tracking-tight text-neutral-900 group-hover:text-red-600 transition-colors">CABO VERDE</span>
+            <span class="text-[9px] uppercase tracking-widest text-neutral-400 font-semibold -mt-1">Living &amp; Design</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Center: Desktop Navigation -->
+      <nav class="hidden md:flex items-center gap-7 lg:gap-8 text-[14px] font-medium text-neutral-700">
+        <a href="#home" class="text-red-600 font-semibold border-b-2 border-red-600 pb-1">Home</a>
+        <a href="#popular-picks" class="hover:text-red-600 transition-colors">Shop All</a>
+
+        <div class="relative group py-2">
+          <button class="flex items-center gap-1 hover:text-red-600 transition-colors focus:outline-none">
+            <span>Living</span>
+            <svg class="w-3.5 h-3.5 text-neutral-400 group-hover:text-red-600 group-hover:rotate-180 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          </button>
+          <div class="absolute left-0 top-full hidden group-hover:block w-48 bg-white border border-neutral-100 shadow-xl rounded-xl py-2 z-50">
+            <a href="#popular-picks" class="block px-4 py-2 hover:bg-neutral-50 hover:text-red-600 text-sm">Sofas</a>
+            <a href="#popular-picks" class="block px-4 py-2 hover:bg-neutral-50 hover:text-red-600 text-sm">Lounge Chairs</a>
+            <a href="#popular-picks" class="block px-4 py-2 hover:bg-neutral-50 hover:text-red-600 text-sm">Chairs</a>
+            <a href="#popular-picks" class="block px-4 py-2 hover:bg-neutral-50 hover:text-red-600 text-sm">Tables</a>
+          </div>
+        </div>
+
+        <div class="relative group py-2">
+          <button class="flex items-center gap-1 hover:text-red-600 transition-colors focus:outline-none">
+            <span>Dining</span>
+            <svg class="w-3.5 h-3.5 text-neutral-400 group-hover:text-red-600 group-hover:rotate-180 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          </button>
+          <div class="absolute left-0 top-full hidden group-hover:block w-48 bg-white border border-neutral-100 shadow-xl rounded-xl py-2 z-50">
+            <a href="#popular-picks" class="block px-4 py-2 hover:bg-neutral-50 hover:text-red-600 text-sm">Dining Chair</a>
+            <a href="#popular-picks" class="block px-4 py-2 hover:bg-neutral-50 hover:text-red-600 text-sm">Dining Table</a>
+          </div>
+        </div>
+
+        <div class="relative group py-2">
+          <button class="flex items-center gap-1 hover:text-red-600 transition-colors focus:outline-none">
+            <span>Bedroom</span>
+            <svg class="w-3.5 h-3.5 text-neutral-400 group-hover:text-red-600 group-hover:rotate-180 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          </button>
+          <div class="absolute left-0 top-full hidden group-hover:block w-48 bg-white border border-neutral-100 shadow-xl rounded-xl py-2 z-50">
+            <a href="#popular-picks" class="block px-4 py-2 hover:bg-neutral-50 hover:text-red-600 text-sm">Beds</a>
+            <a href="#category-slider" class="block px-4 py-2 hover:bg-neutral-50 hover:text-red-600 text-sm">Storage</a>
+          </div>
+        </div>
+
+        <a href="#trending-section" class="hover:text-red-600 transition-colors">Lighting</a>
+        <a href="#about-section" class="hover:text-red-600 transition-colors">About</a>
+        <a href="#contact" class="hover:text-red-600 transition-colors">Contact</a>
+      </nav>
+
+      <!-- Right: Utility Icons -->
+      <div class="flex items-center gap-4 text-neutral-800">
+        <button id="cv-cart-btn" class="p-2 hover:text-red-600 transition-colors relative" aria-label="Cart">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+          <span id="cv-cart-badge" class="absolute top-1 right-0.5 bg-red-600 text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">1</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="cv-mobile-drawer" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden opacity-0 transition-opacity duration-300">
+    <div class="fixed inset-y-0 left-0 max-w-xs w-full bg-white shadow-2xl flex flex-col transform -translate-x-full transition-transform duration-300" id="cv-mobile-drawer-panel">
+      <div class="p-5 border-b border-neutral-100 flex items-center justify-between">
+        <span class="font-bold text-lg text-neutral-900">Cabo Verde</span>
+        <button id="cv-mobile-drawer-close" class="p-2 text-neutral-400 hover:text-neutral-900">&times;</button>
+      </div>
+      <div class="p-5 space-y-3 text-sm font-medium">
+        <a href="#home" class="block py-1 text-red-600">Home</a>
+        <a href="#popular-picks" class="block py-1 hover:text-red-600">Shop All</a>
+        <a href="#popular-picks" class="block py-1 hover:text-red-600">Living</a>
+        <a href="#popular-picks" class="block py-1 hover:text-red-600">Dining</a>
+        <a href="#popular-picks" class="block py-1 hover:text-red-600">Bedroom</a>
+        <a href="#trending-section" class="block py-1 hover:text-red-600">Lighting</a>
+        <a href="#about-section" class="block py-1 hover:text-red-600">About</a>
+        <a href="#contact" class="block py-1 hover:text-red-600">Contact: client@webmedia.al</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================================================================= -->
+  <!-- PART 2 OF 5: HERO & CATEGORIES (part2_hero_categories.html)       -->
+  <!-- ================================================================= -->
+  <section id="home" class="relative bg-neutral-900 text-white overflow-hidden min-h-[480px] lg:min-h-[580px] flex items-center">
+    <div class="absolute inset-0 z-0">
+      <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1920&q=80" alt="Cabo Verde Showcase" class="w-full h-full object-cover opacity-45">
+      <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent"></div>
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
+      <div class="max-w-2xl">
+        <span class="inline-block text-xs uppercase tracking-[0.25em] text-neutral-300 font-bold mb-3 border-b border-red-600 pb-1">
+          Elegant Modern Minimalism
+        </span>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight mb-6">
+          Designed To Work With You
+        </h1>
+        <p class="text-base sm:text-lg text-neutral-300 mb-8 max-w-xl font-light leading-relaxed">
+          Discover hand-crafted architectural furniture built for comfort, endurance, and unmatched elegance.
+        </p>
+        <a href="#popular-picks" class="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold px-8 py-3.5 rounded-full shadow-lg transition-transform hover:scale-105">
+          <span>Shop Now</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories Scrollable Bar -->
+  <section id="category-slider" class="py-16 bg-white border-b border-neutral-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-10">
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-neutral-900 tracking-tight">Shop By Category</h2>
+        <p class="text-neutral-500 text-sm mt-2">Discover our curated selection of premium furniture pieces.</p>
+      </div>
+      <div class="flex gap-4 sm:gap-6 overflow-x-auto pb-4 scroll-smooth no-scrollbar">
+        <div class="flex-none w-36 sm:w-44 text-center group cursor-pointer">
+          <div class="w-full aspect-[4/3] rounded-xl overflow-hidden bg-neutral-100 p-3 mb-3 border border-neutral-100 group-hover:border-red-200 transition-all shadow-sm">
+            <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=400&q=80" alt="Sofa" class="w-full h-full object-contain group-hover:scale-105 transition-transform">
+          </div>
+          <h3 class="font-bold text-neutral-800 text-sm group-hover:text-red-600">Sofa</h3>
+          <p class="text-neutral-400 text-xs">20 Products</p>
+        </div>
+        <div class="flex-none w-36 sm:w-44 text-center group cursor-pointer">
+          <div class="w-full aspect-[4/3] rounded-xl overflow-hidden bg-neutral-100 p-3 mb-3 border border-neutral-100 group-hover:border-red-200 transition-all shadow-sm">
+            <img src="https://images.unsplash.com/photo-1580481077194-43610996f874?auto=format&fit=crop&w=400&q=80" alt="Chair" class="w-full h-full object-contain group-hover:scale-105 transition-transform">
+          </div>
+          <h3 class="font-bold text-neutral-800 text-sm group-hover:text-red-600">Chair</h3>
+          <p class="text-neutral-400 text-xs">14 Products</p>
+        </div>
+        <div class="flex-none w-36 sm:w-44 text-center group cursor-pointer">
+          <div class="w-full aspect-[4/3] rounded-xl overflow-hidden bg-neutral-100 p-3 mb-3 border border-neutral-100 group-hover:border-red-200 transition-all shadow-sm">
+            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=400&q=80" alt="Beds" class="w-full h-full object-contain group-hover:scale-105 transition-transform">
+          </div>
+          <h3 class="font-bold text-neutral-800 text-sm group-hover:text-red-600">Storage Beds</h3>
+          <p class="text-neutral-400 text-xs">8 Products</p>
+        </div>
+        <div class="flex-none w-36 sm:w-44 text-center group cursor-pointer">
+          <div class="w-full aspect-[4/3] rounded-xl overflow-hidden bg-neutral-100 p-3 mb-3 border border-neutral-100 group-hover:border-red-200 transition-all shadow-sm">
+            <img src="https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?auto=format&fit=crop&w=400&q=80" alt="Tables" class="w-full h-full object-contain group-hover:scale-105 transition-transform">
+          </div>
+          <h3 class="font-bold text-neutral-800 text-sm group-hover:text-red-600">Tables</h3>
+          <p class="text-neutral-400 text-xs">16 Products</p>
+        </div>
+        <div class="flex-none w-36 sm:w-44 text-center group cursor-pointer">
+          <div class="w-full aspect-[4/3] rounded-xl overflow-hidden bg-neutral-100 p-3 mb-3 border border-neutral-100 group-hover:border-red-200 transition-all shadow-sm">
+            <img src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=400&q=80" alt="Lighting" class="w-full h-full object-contain group-hover:scale-105 transition-transform">
+          </div>
+          <h3 class="font-bold text-neutral-800 text-sm group-hover:text-red-600">Lighting</h3>
+          <p class="text-neutral-400 text-xs">8 Products</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 Promo Banners -->
+  <section class="py-12 bg-neutral-50/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="relative bg-white rounded-2xl overflow-hidden p-6 flex flex-col justify-between border border-neutral-100 shadow-sm min-h-[240px]">
+          <div class="relative z-10 max-w-[65%]">
+            <span class="text-xs font-semibold text-neutral-500 uppercase">Design For You</span>
+            <h3 class="text-xl font-bold text-neutral-900 mt-1 mb-3">Sofa Design Collection 2026</h3>
+            <a href="#popular-picks" class="inline-flex bg-red-600 text-white text-xs font-semibold px-4 py-2 rounded-full">Shop Now</a>
+          </div>
+          <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=400&q=80" alt="Sofa" class="absolute right-0 bottom-0 w-1/2 h-40 object-contain">
+        </div>
+        <div class="relative bg-[#3e2e28] text-white rounded-2xl overflow-hidden p-6 flex flex-col justify-between shadow-sm min-h-[240px]">
+          <div class="relative z-10 max-w-[65%]">
+            <span class="text-xs font-semibold text-amber-300 uppercase">Top Lamp Brand</span>
+            <h3 class="text-xl font-bold text-white mt-1 mb-3">Sale Up to 40% OFF</h3>
+            <a href="#trending-section" class="inline-flex bg-red-600 text-white text-xs font-semibold px-4 py-2 rounded-full">Shop Now</a>
+          </div>
+          <img src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=400&q=80" alt="Lamp" class="absolute right-0 bottom-0 w-1/2 h-40 object-contain">
+        </div>
+        <div class="relative bg-white rounded-2xl overflow-hidden p-6 flex flex-col justify-between border border-neutral-100 shadow-sm min-h-[240px]">
+          <div class="relative z-10 max-w-[65%]">
+            <span class="text-xs font-semibold text-neutral-500 uppercase">New Products</span>
+            <h3 class="text-xl font-bold text-neutral-900 mt-1 mb-3">Top Trendy Chairs Collection 2025</h3>
+            <a href="#popular-picks" class="inline-flex bg-red-600 text-white text-xs font-semibold px-4 py-2 rounded-full">Shop Now</a>
+          </div>
+          <img src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&w=400&q=80" alt="Chairs" class="absolute right-0 bottom-0 w-1/2 h-40 object-contain">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================= -->
+  <!-- PART 3 OF 5: POPULAR PRODUCTS (part3_popular_products.html)       -->
+  <!-- ================================================================= -->
+  <section id="popular-picks" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-8">
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-neutral-900 tracking-tight">Today's Popular Picks</h2>
+        <p class="text-neutral-500 text-sm mt-2">Unmatched design—superior performance and customer satisfaction in one.</p>
+      </div>
+
+      <div class="flex items-center justify-center gap-2 sm:gap-3 mb-10 overflow-x-auto no-scrollbar py-2">
+        <button class="cv-tab px-6 py-2.5 rounded-md text-sm font-bold bg-red-600 text-white shadow-sm" onclick="switchCategory('sofas')">Sofas</button>
+        <button class="cv-tab px-6 py-2.5 rounded-md text-sm font-semibold bg-neutral-100 text-neutral-700 hover:bg-neutral-200" onclick="switchCategory('lounge')">Lounge Chairs</button>
+        <button class="cv-tab px-6 py-2.5 rounded-md text-sm font-semibold bg-neutral-100 text-neutral-700 hover:bg-neutral-200" onclick="switchCategory('tables')">Tables</button>
+        <button class="cv-tab px-6 py-2.5 rounded-md text-sm font-semibold bg-neutral-100 text-neutral-700 hover:bg-neutral-200" onclick="switchCategory('chairs')">Chairs</button>
+        <button class="cv-tab px-6 py-2.5 rounded-md text-sm font-semibold bg-neutral-100 text-neutral-700 hover:bg-neutral-200" onclick="switchCategory('bed')">Bed</button>
+      </div>
+
+      <!-- Products Grid -->
+      <div id="cv-products-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Product Cards will render here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================= -->
+  <!-- PART 4 OF 5: ROOMS, BEST SELLERS, BLOG (part4_rooms_reviews_blog.html) -->
+  <!-- ================================================================= -->
+  <section id="shop-by-room" class="py-16 bg-neutral-50/70 border-t border-neutral-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-10">
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-neutral-900 tracking-tight">Shop by Room</h2>
+        <p class="text-neutral-500 text-sm mt-2">Find furniture tailored to every room in your home.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+        <div class="md:col-span-5 relative rounded-2xl overflow-hidden shadow-sm group min-h-[380px] md:min-h-[500px]">
+          <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1000&q=80" alt="Living Room" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+          <div class="absolute bottom-6 left-6 z-10">
+            <a href="#popular-picks" class="inline-flex items-center gap-2 bg-white/95 text-neutral-900 font-bold text-xs uppercase tracking-wider px-5 py-3 rounded-full shadow-lg">
+              <span>Living Room</span> &rarr;
+            </a>
+          </div>
+        </div>
+        <div class="md:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div class="relative rounded-2xl overflow-hidden shadow-sm group min-h-[220px]">
+            <img src="https://images.unsplash.com/photo-1540518614846-7ede433c4ef0?auto=format&fit=crop&w=800&q=80" alt="Bed Room" class="w-full h-full object-cover">
+            <div class="absolute bottom-5 left-5 z-10">
+              <a href="#popular-picks" class="inline-flex items-center gap-1.5 bg-white/95 text-neutral-900 font-bold text-xs px-4 py-2.5 rounded-full shadow"><span>Bed Room</span> &rarr;</a>
+            </div>
+          </div>
+          <div class="relative rounded-2xl overflow-hidden shadow-sm group min-h-[220px]">
+            <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80" alt="Bathroom" class="w-full h-full object-cover">
+            <div class="absolute bottom-5 left-5 z-10">
+              <a href="#popular-picks" class="inline-flex items-center gap-1.5 bg-white/95 text-neutral-900 font-bold text-xs px-4 py-2.5 rounded-full shadow"><span>Bathroom</span> &rarr;</a>
+            </div>
+          </div>
+          <div class="sm:col-span-2 relative rounded-2xl overflow-hidden shadow-sm group min-h-[240px]">
+            <img src="https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=1200&q=80" alt="Dining Room" class="w-full h-full object-cover">
+            <div class="absolute bottom-5 left-5 z-10">
+              <a href="#popular-picks" class="inline-flex items-center gap-1.5 bg-white/95 text-neutral-900 font-bold text-xs px-5 py-3 rounded-full shadow"><span>Dining Room</span> &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 15% Off Holiday Sale Banner -->
+  <section class="relative py-20 bg-neutral-900 text-white text-center overflow-hidden my-6">
+    <div class="relative z-10 max-w-xl mx-auto px-4 bg-white/95 text-neutral-900 rounded-2xl p-8 shadow-2xl backdrop-blur-md">
+      <span class="text-xs font-bold uppercase tracking-widest text-neutral-500">Limited Time Online</span>
+      <h2 class="text-3xl font-extrabold my-2">15% Off Everything</h2>
+      <p class="text-sm text-neutral-600 mb-6">Holiday Furniture Sale &bull; Use code <strong class="text-red-600">CABOVERDE15</strong></p>
+      <a href="#popular-picks" class="inline-block bg-red-600 hover:bg-red-700 text-white font-semibold text-sm px-8 py-3 rounded-full shadow-lg">Grab Your Deal &rarr;</a>
+    </div>
+  </section>
+
+  <!-- About Cabo Verde Section -->
+  <section id="about-section" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-6 space-y-6">
+          <h2 class="text-3xl font-extrabold text-neutral-900">Welcome to Cabo Verde Store</h2>
+          <p class="text-neutral-600 text-base leading-relaxed">
+            Your destination for modern living. We craft premium furniture that blends style, comfort, and durability, transforming every room into a masterpiece. With a passion for design and quality, we're here to elevate your home.
+          </p>
+          <a href="#contact" class="inline-flex items-center gap-2 bg-red-600 text-white font-semibold text-sm px-6 py-3 rounded-full shadow">About Us &rarr;</a>
+        </div>
+        <div class="lg:col-span-6 space-y-8">
+          <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1000&q=80" alt="Showroom" class="rounded-2xl shadow-lg w-full h-64 object-cover">
+          <div class="grid grid-cols-3 gap-4 text-center">
+            <div class="bg-neutral-50 rounded-xl p-4 border border-neutral-100">
+              <div class="text-2xl font-black text-neutral-900">30K</div>
+              <div class="text-xs text-neutral-500">Happy Customers</div>
+            </div>
+            <div class="bg-neutral-50 rounded-xl p-4 border border-neutral-100">
+              <div class="text-2xl font-black text-neutral-900">+27%</div>
+              <div class="text-xs text-neutral-500">Growth in Style Trends</div>
+            </div>
+            <div class="bg-neutral-50 rounded-xl p-4 border border-neutral-100">
+              <div class="text-2xl font-black text-neutral-900">3M</div>
+              <div class="text-xs text-neutral-500">Products Sold Globally</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================= -->
+  <!-- PART 5 OF 5: FOOTER, CONTACT, ZOOM (part5_footer.html)            -->
+  <!-- ================================================================= -->
+  <footer id="contact" class="bg-black text-white pt-16 pb-12 border-t border-neutral-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-12 flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full bg-red-600 flex items-center justify-center text-white font-black text-sm">CV</div>
+        <div>
+          <h2 class="text-2xl font-extrabold tracking-tight text-white">CABO VERDE</h2>
+          <p class="text-xs text-neutral-400 uppercase tracking-widest">Luxury Living &amp; Interior Design</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-neutral-800 text-sm">
+        <div>
+          <h3 class="font-bold text-base mb-4">Store</h3>
+          <ul class="space-y-2 text-neutral-400 text-xs">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#popular-picks">Shop All</a></li>
+            <li><a href="#popular-picks">Living</a></li>
+            <li><a href="#popular-picks">Dining</a></li>
+            <li><a href="#popular-picks">Bedroom</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold text-base mb-4">Policies</h3>
+          <ul class="space-y-2 text-neutral-400 text-xs">
+            <li><a href="#">Terms &amp; Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Refund Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold text-base mb-4">About Us</h3>
+          <p class="text-neutral-400 text-xs leading-relaxed mb-4">
+            Delivering an unmatched customer experience in luxury modern furniture.
+          </p>
+          <div class="text-xs text-neutral-400 space-y-1">
+            <p>500 Terry Francine St., San Francisco</p>
+            <p>123-456-7890</p>
+            <p><a href="mailto:client@webmedia.al" class="text-red-500 font-bold underline">client@webmedia.al</a></p>
+          </div>
+        </div>
+        <div>
+          <h3 class="font-bold text-base mb-4">Account</h3>
+          <ul class="space-y-2 text-neutral-400 text-xs">
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">My Wishlist</a></li>
+            <li><a href="#">My Orders</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold text-base mb-4">Newsletter</h3>
+          <form action="contact.php" method="POST" class="space-y-3" onsubmit="handleNewsletter(event)">
+            <input type="hidden" name="form_type" value="newsletter">
+            <input type="email" name="email" required placeholder="Enter your email" class="w-full px-3 py-2.5 bg-neutral-900 border border-neutral-700 rounded-lg text-xs text-white">
+            <button type="submit" class="w-full bg-red-600 hover:bg-red-700 text-white text-xs font-bold py-2.5 px-4 rounded-lg">Submit</button>
+            <div id="newsletter-msg" class="text-xs text-emerald-400 hidden pt-1">Subscribed! Forwarded to client@webmedia.al</div>
+          </form>
+        </div>
+      </div>
+      <div class="pt-8 text-center sm:text-left text-xs text-neutral-500">
+        &copy; 2026 Cabo Verde. All rights reserved. &bull; Contact: <a href="mailto:client@webmedia.al" class="text-red-500">client@webmedia.al</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Contact Action -->
+  <div class="fixed bottom-6 right-6 z-40">
+    <button onclick="openContactModal()" class="flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-bold text-sm px-5 py-3 rounded-full shadow-2xl">
+      <span>+ Get in touch</span>
+    </button>
+  </div>
+
+  <!-- PRODUCT ZOOM MODAL (Feature explicitly requested: "add also product zoom") -->
+  <div id="product-zoom-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-4xl w-full shadow-2xl overflow-hidden relative p-6 sm:p-8">
+      <button onclick="closeProductZoom()" class="absolute top-4 right-4 text-neutral-400 hover:text-neutral-900 text-2xl font-bold">&times;</button>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <!-- Interactive Zoom Stage -->
+        <div class="relative aspect-square bg-neutral-50 rounded-xl overflow-hidden border border-neutral-200 cursor-crosshair group select-none" id="zoom-box" onmousemove="zoomMove(event)" onmouseleave="zoomReset()">
+          <img id="zoom-img" src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=1200&q=85" alt="Zoom Target" class="w-full h-full object-contain transition-transform duration-75 origin-center">
+          <div class="absolute bottom-2 right-2 bg-black/70 text-white text-[10px] px-2 py-1 rounded">Move cursor over image to zoom</div>
+        </div>
+        <div>
+          <span class="text-xs text-neutral-400 uppercase tracking-wider">SKU: 006 &bull; Lighting</span>
+          <h2 id="zoom-title" class="text-2xl font-extrabold text-neutral-900 mt-1 mb-2">Elegant Illumination Lamp</h2>
+          <div class="text-2xl font-black text-red-600 mb-4">$85.00</div>
+          <p class="text-xs text-neutral-600 leading-relaxed mb-6">
+            Hand-spun copper lamp with glare-free ambient diffuser. Provides warm architectural illumination for contemporary bedrooms and reading salons.
+          </p>
+          <div class="flex gap-3 mb-6">
+            <button onclick="addToCart('Elegant Illumination Lamp', 85)" class="flex-1 bg-neutral-900 hover:bg-neutral-800 text-white font-bold py-3 rounded-xl text-xs">Add to Cart</button>
+            <button onclick="window.location.href='mailto:client@webmedia.al?subject=Order inquiry for Elegant Illumination Lamp'" class="flex-1 bg-red-600 hover:bg-red-700 text-white font-bold py-3 rounded-xl text-xs">Buy Now</button>
+          </div>
+          <div class="text-xs text-neutral-500 border-t pt-4">
+            Inquiries sent to: <a href="mailto:client@webmedia.al" class="text-red-600 font-bold">client@webmedia.al</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive JavaScript Engine -->
+  <script>
+    const sampleProducts = [
+      { id: 'urban-oasis', name: 'Urban Oasis Carpet', price: 85, origPrice: 120, badge: 'Bestseller', img: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=800&q=80' },
+      { id: 'luxe-sofa', name: 'Luxe Lounge Sofa', price: 2467, badge: 'NEW', img: 'https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=800&q=80' },
+      { id: 'modern-comfort', name: 'Modern Comfort Sofa', price: 1200, badge: 'NEW', img: 'https://images.unsplash.com/photo-1540574163026-643ea20ade25?auto=format&fit=crop&w=800&q=80' },
+      { id: 'elegant-haven', name: 'Elegant Haven Sofa', price: 1200, origPrice: 1450, badge: 'SALE', img: 'https://images.unsplash.com/photo-1550581190-9c1c48d21d6c?auto=format&fit=crop&w=800&q=80' }
+    ];
+
+    function renderProducts() {
+      const grid = document.getElementById('cv-products-grid');
+      if (!grid) return;
+      grid.innerHTML = sampleProducts.map(p => `
+        <div class="bg-white rounded-xl border border-neutral-100 p-4 hover:shadow-xl transition-all flex flex-col justify-between group">
+          <div class="relative w-full aspect-square bg-neutral-50 rounded-lg overflow-hidden mb-4 cursor-pointer" onclick="openProductZoom('${p.name}', ${p.price}, '${p.img}')">
+            ${p.badge ? `<span class="absolute top-2 left-2 z-10 bg-red-600 text-white text-[10px] font-bold px-2 py-0.5 rounded">${p.badge}</span>` : ''}
+            <img src="${p.img}" alt="${p.name}" class="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform">
+            <div class="absolute inset-x-0 bottom-3 flex justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+              <span class="bg-white text-xs font-semibold px-4 py-1.5 rounded-full shadow">Quick View &amp; Zoom</span>
+            </div>
+          </div>
+          <div class="text-center">
+            <h3 class="font-bold text-neutral-800 text-sm cursor-pointer" onclick="openProductZoom('${p.name}', ${p.price}, '${p.img}')">${p.name}</h3>
+            <div class="mt-1"><span class="font-bold text-sm">$${p.price.toLocaleString()}</span> ${p.origPrice ? `<span class="text-xs text-neutral-400 line-through ml-2">$${p.origPrice}</span>` : ''}</div>
+            <button onclick="addToCart('${p.name}', ${p.price})" class="mt-4 w-full py-2.5 border border-neutral-200 rounded-lg text-xs font-bold hover:bg-neutral-900 hover:text-white transition-colors">+ Add to Cart</button>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    renderProducts();
+
+    // Zoom Lens functionality
+    function openProductZoom(title, price, img) {
+      document.getElementById('zoom-title').innerText = title;
+      document.getElementById('zoom-img').src = img;
+      document.getElementById('product-zoom-modal').classList.remove('hidden');
+    }
+
+    function closeProductZoom() {
+      document.getElementById('product-zoom-modal').classList.add('hidden');
+    }
+
+    function zoomMove(e) {
+      const box = document.getElementById('zoom-box');
+      const img = document.getElementById('zoom-img');
+      const rect = box.getBoundingClientRect();
+      const x = ((e.clientX - rect.left) / rect.width) * 100;
+      const y = ((e.clientY - rect.top) / rect.height) * 100;
+      img.style.transformOrigin = `${x}% ${y}%`;
+      img.style.transform = 'scale(2.2)';
+    }
+
+    function zoomReset() {
+      const img = document.getElementById('zoom-img');
+      img.style.transform = 'scale(1)';
+    }
+
+    // Mobile menu toggle
+    const mobileBtn = document.getElementById('cv-mobile-menu-btn');
+    const mobileDrawer = document.getElementById('cv-mobile-drawer');
+    const mobilePanel = document.getElementById('cv-mobile-drawer-panel');
+    const mobileClose = document.getElementById('cv-mobile-drawer-close');
+
+    if (mobileBtn && mobileDrawer) {
+      mobileBtn.onclick = () => {
+        mobileDrawer.classList.remove('hidden');
+        setTimeout(() => {
+          mobileDrawer.classList.remove('opacity-0');
+          mobilePanel.classList.remove('-translate-x-full');
+        }, 10);
+      };
+      mobileClose.onclick = () => {
+        mobilePanel.classList.add('-translate-x-full');
+        mobileDrawer.classList.add('opacity-0');
+        setTimeout(() => mobileDrawer.classList.add('hidden'), 300);
+      };
+    }
+
+    let cartCount = 1;
+    function addToCart(name, price) {
+      cartCount++;
+      const badge = document.getElementById('cv-cart-badge');
+      if (badge) badge.innerText = cartCount;
+      alert(`Added "${name}" ($${price}) to cart!`);
+    }
+
+    function handleNewsletter(e) {
+      e.preventDefault();
+      document.getElementById('newsletter-msg').classList.remove('hidden');
+    }
+
+    function openContactModal() {
+      window.location.href = 'mailto:client@webmedia.al?subject=Inquiry from Cabo Verde Website';
+    }
+  </script>
+</body>
+</html>

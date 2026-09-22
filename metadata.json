@@ -1,0 +1,6 @@
+{
+  "name": "Cabo Verde - Luxury Furniture & Decor",
+  "description": "Modern luxury furniture and interior design portal for Cabo Verde with 3D wood carved iconography, 3-second autoplay catalog carousel, interactive product zoom loupe, quotation inquiries routed to client@webmedia.al, admin authentication with 30-second OTP, and product upload management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

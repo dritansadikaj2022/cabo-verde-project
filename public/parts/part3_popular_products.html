@@ -1,0 +1,171 @@
+<!-- ================================================================= -->
+<!-- PART 3: POPULAR PRODUCTS (part3_popular_products.html)            -->
+<!-- Business: Cabo Verde | Contact: client@webmedia.al                -->
+<!-- Category Switcher Tabs, Product Cards, Quick View & Zoom Triggers -->
+<!-- ================================================================= -->
+
+<section id="popular-picks" class="py-16 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <!-- Section Heading -->
+    <div class="text-center max-w-2xl mx-auto mb-8">
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-neutral-900 tracking-tight">Today's Popular Picks</h2>
+      <p class="text-neutral-500 text-sm mt-2">Unmatched design—superior performance and customer satisfaction in one.</p>
+    </div>
+
+    <!-- Category Tabs Navigation (Sofas, Lounge Chairs, Tables, Chairs, Bed) -->
+    <div class="flex items-center justify-center gap-2 sm:gap-3 mb-10 overflow-x-auto no-scrollbar py-2">
+      <button class="cv-tab-btn px-6 py-2.5 rounded-md text-sm font-bold transition-all bg-red-600 text-white shadow-sm" data-target="sofas">
+        Sofas
+      </button>
+      <button class="cv-tab-btn px-6 py-2.5 rounded-md text-sm font-semibold transition-all bg-neutral-100 hover:bg-neutral-200 text-neutral-700" data-target="lounge-chairs">
+        Lounge Chairs
+      </button>
+      <button class="cv-tab-btn px-6 py-2.5 rounded-md text-sm font-semibold transition-all bg-neutral-100 hover:bg-neutral-200 text-neutral-700" data-target="tables">
+        Tables
+      </button>
+      <button class="cv-tab-btn px-6 py-2.5 rounded-md text-sm font-semibold transition-all bg-neutral-100 hover:bg-neutral-200 text-neutral-700" data-target="chairs">
+        Chairs
+      </button>
+      <button class="cv-tab-btn px-6 py-2.5 rounded-md text-sm font-semibold transition-all bg-neutral-100 hover:bg-neutral-200 text-neutral-700" data-target="bed">
+        Bed
+      </button>
+    </div>
+
+    <!-- Product Carousel Container with Prev/Next Controls -->
+    <div class="relative group/carousel">
+      
+      <!-- Products Track (Swapped dynamically by JS or viewed in carousel) -->
+      <div id="cv-popular-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Product 1: Urban Oasis Carpet / Velvet Sofa -->
+        <div class="cv-product-card bg-white rounded-xl border border-neutral-100 p-4 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-id="urban-oasis-carpet">
+          <div class="relative w-full aspect-square bg-neutral-50 rounded-lg overflow-hidden mb-4 cursor-pointer cv-open-zoom">
+            <span class="absolute top-2 left-2 z-10 bg-red-600 text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">
+              Bestseller
+            </span>
+            <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=800&q=80" 
+                 alt="Urban Oasis Carpet" 
+                 class="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform duration-300">
+            <!-- Hover Quick View / Zoom Button -->
+            <div class="absolute inset-x-0 bottom-3 flex justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+              <button class="cv-quick-view-btn bg-white/95 hover:bg-neutral-900 hover:text-white text-neutral-900 text-xs font-semibold px-4 py-2 rounded-full shadow-lg backdrop-blur-sm transition-colors flex items-center gap-1.5" data-id="urban-oasis-carpet">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                <span>Quick View</span>
+              </button>
+            </div>
+          </div>
+          <div class="text-center flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-bold text-neutral-800 text-sm hover:text-red-600 transition-colors cursor-pointer cv-open-zoom">Urban Oasis Carpet</h3>
+              <div class="mt-1 flex items-center justify-center gap-2">
+                <span class="text-neutral-900 font-bold text-sm">$85.00</span>
+                <span class="text-neutral-400 line-through text-xs">$120.00</span>
+              </div>
+            </div>
+            <button class="cv-add-to-cart-btn mt-4 w-full py-2.5 px-4 border border-neutral-200 rounded-lg text-xs font-bold text-neutral-800 hover:bg-neutral-900 hover:text-white hover:border-neutral-900 transition-colors flex items-center justify-center gap-1.5" data-id="urban-oasis-carpet">
+              <span>+ Add to Cart</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 2: Luxe Lounge Sofa -->
+        <div class="cv-product-card bg-white rounded-xl border border-neutral-100 p-4 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-id="luxe-lounge-sofa">
+          <div class="relative w-full aspect-square bg-neutral-50 rounded-lg overflow-hidden mb-4 cursor-pointer cv-open-zoom">
+            <span class="absolute top-2 left-2 z-10 bg-neutral-900 text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">
+              NEW
+            </span>
+            <img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=800&q=80" 
+                 alt="Luxe Lounge Sofa" 
+                 class="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute inset-x-0 bottom-3 flex justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+              <button class="cv-quick-view-btn bg-white/95 hover:bg-neutral-900 hover:text-white text-neutral-900 text-xs font-semibold px-4 py-2 rounded-full shadow-lg backdrop-blur-sm transition-colors flex items-center gap-1.5" data-id="luxe-lounge-sofa">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                <span>Quick View</span>
+              </button>
+            </div>
+          </div>
+          <div class="text-center flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-bold text-neutral-800 text-sm hover:text-red-600 transition-colors cursor-pointer cv-open-zoom">Luxe Lounge Sofa</h3>
+              <div class="mt-1">
+                <span class="text-neutral-900 font-bold text-sm">$2,467.00</span>
+              </div>
+            </div>
+            <button class="cv-add-to-cart-btn mt-4 w-full py-2.5 px-4 border border-neutral-200 rounded-lg text-xs font-bold text-neutral-800 hover:bg-neutral-900 hover:text-white hover:border-neutral-900 transition-colors flex items-center justify-center gap-1.5" data-id="luxe-lounge-sofa">
+              <span>+ Add to Cart</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 3: Modern Comfort Sofa -->
+        <div class="cv-product-card bg-white rounded-xl border border-neutral-100 p-4 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-id="modern-comfort-sofa">
+          <div class="relative w-full aspect-square bg-neutral-50 rounded-lg overflow-hidden mb-4 cursor-pointer cv-open-zoom">
+            <span class="absolute top-2 left-2 z-10 bg-neutral-900 text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">
+              NEW
+            </span>
+            <img src="https://images.unsplash.com/photo-1540574163026-643ea20ade25?auto=format&fit=crop&w=800&q=80" 
+                 alt="Modern Comfort Sofa" 
+                 class="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute inset-x-0 bottom-3 flex justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+              <button class="cv-quick-view-btn bg-white/95 hover:bg-neutral-900 hover:text-white text-neutral-900 text-xs font-semibold px-4 py-2 rounded-full shadow-lg backdrop-blur-sm transition-colors flex items-center gap-1.5" data-id="modern-comfort-sofa">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                <span>Quick View</span>
+              </button>
+            </div>
+          </div>
+          <div class="text-center flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-bold text-neutral-800 text-sm hover:text-red-600 transition-colors cursor-pointer cv-open-zoom">Modern Comfort Sofa</h3>
+              <div class="mt-1">
+                <span class="text-neutral-900 font-bold text-sm">$1,200.00</span>
+              </div>
+            </div>
+            <button class="cv-add-to-cart-btn mt-4 w-full py-2.5 px-4 border border-neutral-200 rounded-lg text-xs font-bold text-neutral-800 hover:bg-neutral-900 hover:text-white hover:border-neutral-900 transition-colors flex items-center justify-center gap-1.5" data-id="modern-comfort-sofa">
+              <span>+ Add to Cart</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 4: Elegant Haven Sofa -->
+        <div class="cv-product-card bg-white rounded-xl border border-neutral-100 p-4 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-id="elegant-haven-sofa">
+          <div class="relative w-full aspect-square bg-neutral-50 rounded-lg overflow-hidden mb-4 cursor-pointer cv-open-zoom">
+            <span class="absolute top-2 left-2 z-10 bg-amber-600 text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">
+              SALE
+            </span>
+            <img src="https://images.unsplash.com/photo-1550581190-9c1c48d21d6c?auto=format&fit=crop&w=800&q=80" 
+                 alt="Elegant Haven Sofa" 
+                 class="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute inset-x-0 bottom-3 flex justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+              <button class="cv-quick-view-btn bg-white/95 hover:bg-neutral-900 hover:text-white text-neutral-900 text-xs font-semibold px-4 py-2 rounded-full shadow-lg backdrop-blur-sm transition-colors flex items-center gap-1.5" data-id="elegant-haven-sofa">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                <span>Quick View</span>
+              </button>
+            </div>
+          </div>
+          <div class="text-center flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-bold text-neutral-800 text-sm hover:text-red-600 transition-colors cursor-pointer cv-open-zoom">Elegant Haven Sofa</h3>
+              <div class="mt-1 flex items-center justify-center gap-2">
+                <span class="text-neutral-900 font-bold text-sm">$1,200.00</span>
+                <span class="text-neutral-400 line-through text-xs">$1,450.00</span>
+              </div>
+            </div>
+            <button class="cv-add-to-cart-btn mt-4 w-full py-2.5 px-4 border border-neutral-200 rounded-lg text-xs font-bold text-neutral-800 hover:bg-neutral-900 hover:text-white hover:border-neutral-900 transition-colors flex items-center justify-center gap-1.5" data-id="elegant-haven-sofa">
+              <span>+ Add to Cart</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Pagination Dots Indicator (As seen in video 00:22 - 00:29) -->
+      <div class="flex justify-center items-center gap-2 mt-8">
+        <span class="w-2.5 h-2.5 rounded-full bg-neutral-900 cursor-pointer"></span>
+        <span class="w-2 h-2 rounded-full bg-neutral-300 hover:bg-neutral-500 cursor-pointer"></span>
+        <span class="w-2 h-2 rounded-full bg-neutral-300 hover:bg-neutral-500 cursor-pointer"></span>
+        <span class="w-2 h-2 rounded-full bg-neutral-300 hover:bg-neutral-500 cursor-pointer"></span>
+      </div>
+    </div>
+  </div>
+</section>

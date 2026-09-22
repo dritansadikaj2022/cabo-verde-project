@@ -1,0 +1,288 @@
+<!-- ================================================================= -->
+<!-- PART 5: FOOTER, CONTACT, ZOOM MODAL (part5_footer.html)          -->
+<!-- Business: Cabo Verde | Contact: client@webmedia.al                -->
+<!-- Dark Luxury Footer, Newsletter, Floating Button, Zoom Modal       -->
+<!-- ================================================================= -->
+
+<footer id="contact" class="bg-black text-white pt-16 pb-12 border-t border-neutral-800">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <!-- Top Row: Logo & Brand Description -->
+    <div class="mb-12 flex items-center gap-3">
+      <div class="w-10 h-10 rounded-full bg-red-600 flex items-center justify-center text-white font-black text-sm shadow-md">
+        CV
+      </div>
+      <div>
+        <h2 class="text-2xl font-extrabold tracking-tight text-white">CABO VERDE</h2>
+        <p class="text-xs text-neutral-400 uppercase tracking-widest">Luxury Living &amp; Interior Design</p>
+      </div>
+    </div>
+
+    <!-- Main Footer Columns Grid (Store, Policies, About Us, Account, Newsletter) -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-neutral-800 text-sm">
+      
+      <!-- Col 1: Store -->
+      <div>
+        <h3 class="font-bold text-base text-white mb-4">Store</h3>
+        <ul class="space-y-2.5 text-neutral-400 text-xs">
+          <li><a href="#home" class="hover:text-white transition-colors">Home</a></li>
+          <li><a href="#popular-picks" class="hover:text-white transition-colors">Shop All</a></li>
+          <li><a href="#popular-picks" data-category="sofas" class="hover:text-white transition-colors">Living</a></li>
+          <li><a href="#popular-picks" data-category="chairs" class="hover:text-white transition-colors">Dining</a></li>
+          <li><a href="#popular-picks" data-category="bed" class="hover:text-white transition-colors">Bedroom</a></li>
+          <li><a href="#popular-picks" data-category="lighting" class="hover:text-white transition-colors">Lighting</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 2: Policies -->
+      <div>
+        <h3 class="font-bold text-base text-white mb-4">Policies</h3>
+        <ul class="space-y-2.5 text-neutral-400 text-xs">
+          <li><a href="#policies" class="hover:text-white transition-colors">Terms &amp; Conditions</a></li>
+          <li><a href="#policies" class="hover:text-white transition-colors">Privacy Policy</a></li>
+          <li><a href="#policies" class="hover:text-white transition-colors">Shipping Policy</a></li>
+          <li><a href="#policies" class="hover:text-white transition-colors">Refund Policy</a></li>
+          <li><a href="#policies" class="hover:text-white transition-colors">Cookie Policy</a></li>
+          <li><a href="#policies" class="hover:text-white transition-colors">Accessibility Statement</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: About Us (Includes client@webmedia.al as required) -->
+      <div>
+        <h3 class="font-bold text-base text-white mb-4">About Us</h3>
+        <p class="text-neutral-400 text-xs leading-relaxed mb-4">
+          Our mission is to deliver an unmatched customer experience in the furniture industry, ensuring exceptional quality and service in every interaction.
+        </p>
+        <div class="text-xs text-neutral-400 space-y-1">
+          <p>500 Terry Francine St.</p>
+          <p>San Francisco, CA 94158</p>
+          <p class="pt-2 text-white font-medium">123-456-7890</p>
+          <p><a href="mailto:client@webmedia.al" class="text-red-500 hover:text-red-400 font-semibold underline underline-offset-4">client@webmedia.al</a></p>
+        </div>
+      </div>
+
+      <!-- Col 4: Account -->
+      <div>
+        <h3 class="font-bold text-base text-white mb-4">Account</h3>
+        <ul class="space-y-2.5 text-neutral-400 text-xs">
+          <li><a href="#account" class="hover:text-white transition-colors">My Account</a></li>
+          <li><a href="#account" class="hover:text-white transition-colors">My Wishlist</a></li>
+          <li><a href="#account" class="hover:text-white transition-colors">My Orders</a></li>
+          <li><a href="#account" class="hover:text-white transition-colors">My Wallet</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 5: Newsletter Subscription Form (Submits to contact.php) -->
+      <div>
+        <h3 class="font-bold text-base text-white mb-4">Subscribe to our newsletter</h3>
+        <form id="cv-newsletter-form" action="contact.php" method="POST" class="space-y-3">
+          <input type="hidden" name="form_type" value="newsletter">
+          <div>
+            <label for="cv-newsletter-email" class="block text-xs text-neutral-400 mb-1">Email *</label>
+            <input type="email" 
+                   id="cv-newsletter-email" 
+                   name="email" 
+                   required 
+                   placeholder="Enter your email" 
+                   class="w-full px-3 py-2.5 bg-neutral-900 border border-neutral-700 rounded-lg text-xs text-white placeholder-neutral-500 focus:outline-none focus:border-red-500">
+          </div>
+          <div class="flex items-start gap-2 pt-1">
+            <input type="checkbox" id="cv-newsletter-consent" name="consent" required class="mt-0.5 rounded text-red-600 focus:ring-red-500 border-neutral-700 bg-neutral-900">
+            <label for="cv-newsletter-consent" class="text-[11px] text-neutral-400 leading-tight">Yes, subscribe me to your newsletter.</label>
+          </div>
+          <button type="submit" class="w-full bg-red-600 hover:bg-red-700 text-white text-xs font-bold py-2.5 px-4 rounded-lg shadow-md transition-colors">
+            Submit
+          </button>
+          <div id="cv-newsletter-status" class="text-[11px] hidden pt-1"></div>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- Bottom Row: Social Icons & Copyright -->
+    <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-neutral-500">
+      <div class="flex items-center gap-4">
+        <!-- Facebook -->
+        <a href="#" class="w-8 h-8 rounded-full bg-neutral-900 hover:bg-red-600 hover:text-white flex items-center justify-center transition-colors text-neutral-400" aria-label="Facebook">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+        <!-- Instagram -->
+        <a href="#" class="w-8 h-8 rounded-full bg-neutral-900 hover:bg-red-600 hover:text-white flex items-center justify-center transition-colors text-neutral-400" aria-label="Instagram">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+        <!-- Pinterest -->
+        <a href="#" class="w-8 h-8 rounded-full bg-neutral-900 hover:bg-red-600 hover:text-white flex items-center justify-center transition-colors text-neutral-400" aria-label="Pinterest">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.372-12 12 0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.334 1.357-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 12-5.373 12-12 0-6.628-5.393-12-12-12z"/></svg>
+        </a>
+      </div>
+      <div>
+        <p>Copyright &copy; 2026 Cabo Verde. All rights reserved. &bull; Contact: client@webmedia.al</p>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+<!-- Floating "Get in touch" Action Button (As seen throughout video) -->
+<div class="fixed bottom-6 right-6 z-40">
+  <button id="cv-floating-contact-btn" 
+          type="button" 
+          class="flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-bold text-sm px-5 py-3 rounded-full shadow-2xl shadow-red-600/40 transition-transform hover:scale-105 active:scale-95 focus:outline-none">
+    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg>
+    <span>Get in touch</span>
+  </button>
+</div>
+
+<!-- ================================================================= -->
+<!-- PRODUCT DETAIL & INTERACTIVE ZOOM MODAL                           -->
+<!-- Feature requested: "add also product zoom"                        -->
+<!-- Features: Hover Magnifier Loupe Lens + High Res Zoom View + Lightbox -->
+<!-- ================================================================= -->
+<div id="cv-zoom-modal" class="fixed inset-0 z-50 bg-black/75 backdrop-blur-sm hidden opacity-0 transition-opacity duration-300 flex items-center justify-center p-4 sm:p-6 overflow-y-auto">
+  <div class="bg-white rounded-2xl max-w-5xl w-full shadow-2xl overflow-hidden my-auto relative transform scale-95 transition-transform duration-300" id="cv-zoom-modal-dialog">
+    
+    <!-- Modal Close Button -->
+    <button id="cv-zoom-close-btn" class="absolute top-4 right-4 z-20 w-9 h-9 rounded-full bg-neutral-100 hover:bg-neutral-200 text-neutral-600 hover:text-neutral-900 flex items-center justify-center transition-colors">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+    </button>
+
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-8 p-6 sm:p-8">
+      
+      <!-- Left: Interactive Product Images with Product Zoom Lens -->
+      <div class="md:col-span-7 flex flex-col sm:flex-row-reverse gap-4">
+        
+        <!-- Main Zoomable Image Stage -->
+        <div class="flex-1 relative aspect-square bg-neutral-50 rounded-xl overflow-hidden border border-neutral-100 cursor-crosshair group/zoom select-none" id="cv-zoom-stage">
+          <img id="cv-zoom-main-img" 
+               src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=1400&q=85" 
+               alt="Zoomable Product" 
+               class="w-full h-full object-contain pointer-events-none transition-transform duration-75">
+          
+          <!-- Magnifying Lens Guide Overlay -->
+          <div id="cv-zoom-lens" class="absolute w-32 h-32 border-2 border-red-500 bg-red-500/10 rounded-lg pointer-events-none hidden shadow-sm"></div>
+          
+          <!-- Zoom Hint Badge -->
+          <div class="absolute bottom-3 right-3 bg-neutral-900/80 backdrop-blur-sm text-white text-[11px] px-3 py-1.5 rounded-full flex items-center gap-1.5 pointer-events-none">
+            <svg class="w-3.5 h-3.5 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path></svg>
+            <span>Hover to Zoom / Pan</span>
+          </div>
+        </div>
+
+        <!-- Thumbnails Column -->
+        <div class="flex sm:flex-col gap-2.5 overflow-x-auto sm:overflow-y-auto no-scrollbar w-full sm:w-20" id="cv-zoom-thumbnails">
+          <button class="w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border-2 border-red-600 bg-neutral-50 p-1 flex-shrink-0 cursor-pointer cv-thumb-btn active">
+            <img src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=300&q=80" alt="Thumb 1" class="w-full h-full object-contain">
+          </button>
+          <button class="w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border border-neutral-200 hover:border-neutral-400 bg-neutral-50 p-1 flex-shrink-0 cursor-pointer cv-thumb-btn">
+            <img src="https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&w=300&q=80" alt="Thumb 2" class="w-full h-full object-contain">
+          </button>
+          <button class="w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border border-neutral-200 hover:border-neutral-400 bg-neutral-50 p-1 flex-shrink-0 cursor-pointer cv-thumb-btn">
+            <img src="https://images.unsplash.com/photo-1524484485831-a92ffc0de03f?auto=format&fit=crop&w=300&q=80" alt="Thumb 3" class="w-full h-full object-contain">
+          </button>
+          <button class="w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border border-neutral-200 hover:border-neutral-400 bg-neutral-50 p-1 flex-shrink-0 cursor-pointer cv-thumb-btn">
+            <img src="https://images.unsplash.com/photo-1540932239986-30128078f3c5?auto=format&fit=crop&w=300&q=80" alt="Thumb 4" class="w-full h-full object-contain">
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Right: Product Information & Options (As seen in video 01:47 - 02:30) -->
+      <div class="md:col-span-5 flex flex-col justify-between">
+        <div>
+          <!-- Breadcrumb / SKU -->
+          <div class="flex items-center justify-between text-xs text-neutral-400 mb-2">
+            <span>Home &gt; Lighting</span>
+            <span id="cv-zoom-sku">SKU: 006</span>
+          </div>
+
+          <h2 id="cv-zoom-title" class="text-2xl font-extrabold text-neutral-900 tracking-tight mb-2">
+            Elegant Illumination Lamp
+          </h2>
+
+          <div class="flex items-center gap-3 mb-4">
+            <span id="cv-zoom-price" class="text-xl font-black text-red-600">$85.00</span>
+            <span id="cv-zoom-orig-price" class="text-sm text-neutral-400 line-through">$110.00</span>
+            <span class="text-xs font-semibold text-emerald-600 bg-emerald-50 px-2.5 py-0.5 rounded-full">In Stock</span>
+          </div>
+
+          <p id="cv-zoom-desc" class="text-xs text-neutral-600 leading-relaxed mb-6">
+            I'm a product description. I'm a great place to add more details about your product such as sizing, material, care instructions and cleaning instructions.
+          </p>
+
+          <!-- Color Swatches -->
+          <div class="mb-6">
+            <label class="block text-xs font-bold text-neutral-800 mb-2">Color</label>
+            <div class="flex items-center gap-3" id="cv-zoom-colors">
+              <button class="w-7 h-7 rounded-full bg-[#b87333] border-2 border-neutral-900 ring-2 ring-neutral-300 transition-all focus:outline-none" title="Warm Copper"></button>
+              <button class="w-7 h-7 rounded-full bg-[#d4af37] border-2 border-white hover:scale-110 transition-all focus:outline-none" title="Brushed Brass"></button>
+              <button class="w-7 h-7 rounded-full bg-[#2b2d42] border-2 border-white hover:scale-110 transition-all focus:outline-none" title="Charcoal"></button>
+            </div>
+          </div>
+
+          <!-- Quantity Selector -->
+          <div class="mb-6">
+            <label class="block text-xs font-bold text-neutral-800 mb-2">Quantity</label>
+            <div class="inline-flex items-center border border-neutral-300 rounded-lg overflow-hidden bg-neutral-50">
+              <button id="cv-zoom-qty-minus" class="px-3 py-1.5 text-neutral-600 hover:bg-neutral-200 font-bold">-</button>
+              <span id="cv-zoom-qty-val" class="px-4 py-1.5 text-xs font-bold text-neutral-900">1</span>
+              <button id="cv-zoom-qty-plus" class="px-3 py-1.5 text-neutral-600 hover:bg-neutral-200 font-bold">+</button>
+            </div>
+          </div>
+
+          <!-- Purchase Action Buttons -->
+          <div class="space-y-3 mb-6">
+            <div class="grid grid-cols-2 gap-3">
+              <button id="cv-zoom-add-cart" class="w-full bg-neutral-900 hover:bg-neutral-800 text-white text-xs font-bold py-3 px-4 rounded-xl shadow-md transition-colors flex items-center justify-center gap-2">
+                <span>Add to Cart</span>
+              </button>
+              <button id="cv-zoom-buy-now" class="w-full bg-red-600 hover:bg-red-700 text-white text-xs font-bold py-3 px-4 rounded-xl shadow-md transition-colors">
+                Buy Now
+              </button>
+            </div>
+            <button id="cv-zoom-add-wishlist" class="w-full py-2.5 px-4 border border-neutral-200 hover:border-neutral-400 rounded-xl text-xs font-semibold text-neutral-700 transition-colors flex items-center justify-center gap-2">
+              <svg class="w-4 h-4 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+              <span>Add to Wishlist</span>
+            </button>
+          </div>
+
+          <!-- Accordion Sections (Product Info, Return & Refund Policy, Shipping Info) -->
+          <div class="border-t border-neutral-100 space-y-2 pt-2 text-xs">
+            
+            <div class="border-b border-neutral-100 py-2.5">
+              <button class="w-full flex items-center justify-between font-bold text-neutral-800 text-left cv-modal-acc-toggle">
+                <span>PRODUCT INFO</span>
+                <span class="text-base font-normal">+</span>
+              </button>
+              <div class="hidden pt-2 text-neutral-500 leading-relaxed cv-modal-acc-body">
+                I'm a product detail. I'm a great place to add more information about your product such as sizing, material, care and cleaning instructions.
+              </div>
+            </div>
+
+            <div class="border-b border-neutral-100 py-2.5">
+              <button class="w-full flex items-center justify-between font-bold text-neutral-800 text-left cv-modal-acc-toggle">
+                <span>RETURN &amp; REFUND POLICY</span>
+                <span class="text-base font-normal">+</span>
+              </button>
+              <div class="hidden pt-2 text-neutral-500 leading-relaxed cv-modal-acc-body">
+                I'm a Return and Refund policy. I'm a great place to let your customers know what to do in case they are dissatisfied with their purchase.
+              </div>
+            </div>
+
+            <div class="border-b border-neutral-100 py-2.5">
+              <button class="w-full flex items-center justify-between font-bold text-neutral-800 text-left cv-modal-acc-toggle">
+                <span>SHIPPING INFO</span>
+                <span class="text-base font-normal">+</span>
+              </button>
+              <div class="hidden pt-2 text-neutral-500 leading-relaxed cv-modal-acc-body">
+                I'm a shipping policy. I'm a great place to add more information about your shipping methods, packaging and cost.
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>

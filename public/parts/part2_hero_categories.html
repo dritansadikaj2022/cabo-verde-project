@@ -1,0 +1,189 @@
+<!-- ================================================================= -->
+<!-- PART 2: HERO & CATEGORIES (part2_hero_categories.html)            -->
+<!-- Business: Cabo Verde | Contact: client@webmedia.al                -->
+<!-- Hero Slider, Category Scrollable Bar, 3 Promo Banners             -->
+<!-- ================================================================= -->
+
+<!-- Hero Showcase Banner (As seen in video 00:06 - 00:14) -->
+<section id="home" class="relative bg-neutral-900 text-white overflow-hidden min-h-[480px] lg:min-h-[580px] flex items-center">
+  <!-- Background Image with Overlay -->
+  <div class="absolute inset-0 z-0">
+    <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1920&q=80" 
+         alt="Cabo Verde Luxury Furniture Collection" 
+         class="w-full h-full object-cover object-center opacity-45 transform scale-105 transition-transform duration-1000 ease-out" 
+         id="cv-hero-bg">
+    <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent"></div>
+  </div>
+
+  <!-- Hero Slider Content -->
+  <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
+    <div class="max-w-2xl text-center md:text-left mx-auto md:mx-0">
+      <span class="inline-block text-xs uppercase tracking-[0.25em] text-neutral-300 font-bold mb-3 border-b border-red-600 pb-1">
+        Elegant Modern Minimalism
+      </span>
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight mb-6">
+        Designed To Work With You
+      </h1>
+      <p class="text-base sm:text-lg text-neutral-300 mb-8 max-w-xl font-light leading-relaxed">
+        Elevate your living space with Cabo Verde's hand-crafted furniture collection. Engineered for unmatched comfort, longevity, and contemporary architectural beauty.
+      </p>
+      
+      <div class="flex flex-wrap items-center justify-center md:justify-start gap-4">
+        <a href="#popular-picks" class="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold px-8 py-3.5 rounded-full shadow-lg shadow-red-600/30 transition-all hover:gap-3">
+          <span>Shop Now</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+          </svg>
+        </a>
+        <a href="#about-section" class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white font-medium px-6 py-3.5 rounded-full backdrop-blur-md transition-colors border border-white/20">
+          Discover Story
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Slider Arrows (< and >) -->
+  <button id="cv-hero-prev" class="absolute left-4 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-red-600/90 hover:bg-red-600 text-white flex items-center justify-center shadow-lg transition-transform hover:scale-110 focus:outline-none" aria-label="Previous Slide">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"></path></svg>
+  </button>
+  <button id="cv-hero-next" class="absolute right-4 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-red-600/90 hover:bg-red-600 text-white flex items-center justify-center shadow-lg transition-transform hover:scale-110 focus:outline-none" aria-label="Next Slide">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path></svg>
+  </button>
+</section>
+
+<!-- Shop By Category Section (As seen in video 00:00 - 00:05 and 00:14) -->
+<section id="category-slider" class="py-16 bg-white border-b border-neutral-100">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-10">
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-neutral-900 tracking-tight">Shop By Category</h2>
+      <p class="text-neutral-500 text-sm mt-2">Discover our curated selection of premium furniture pieces.</p>
+    </div>
+
+    <!-- Category Slider Grid / Track -->
+    <div class="relative">
+      <div id="cv-cat-scroll" class="flex gap-4 sm:gap-6 overflow-x-auto pb-4 scroll-smooth no-scrollbar">
+        
+        <!-- Category Item 1: Sofa -->
+        <a href="#popular-picks" data-category="sofas" class="flex-none w-36 sm:w-44 text-center group cursor-pointer">
+          <div class="w-full aspect-[4/3] rounded-xl overflow-hidden bg-neutral-100 p-3 mb-3 border border-neutral-100 group-hover:border-red-200 transition-all shadow-sm group-hover:shadow-md">
+            <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=400&q=80" alt="Sofa" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300">
+          </div>
+          <h3 class="font-bold text-neutral-800 text-sm sm:text-base group-hover:text-red-600 transition-colors">Sofa</h3>
+          <p class="text-neutral-400 text-xs mt-0.5">20 Products</p>
+        </a>
+
+        <!-- Category Item 2: Chair -->
+        <a href="#popular-picks" data-category="chairs" class="flex-none w-36 sm:w-44 text-center group cursor-pointer">
+          <div class="w-full aspect-[4/3] rounded-xl overflow-hidden bg-neutral-100 p-3 mb-3 border border-neutral-100 group-hover:border-red-200 transition-all shadow-sm group-hover:shadow-md">
+            <img src="https://images.unsplash.com/photo-1580481077194-43610996f874?auto=format&fit=crop&w=400&q=80" alt="Chair" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300">
+          </div>
+          <h3 class="font-bold text-neutral-800 text-sm sm:text-base group-hover:text-red-600 transition-colors">Chair</h3>
+          <p class="text-neutral-400 text-xs mt-0.5">14 Products</p>
+        </a>
+
+        <!-- Category Item 3: Storage Beds -->
+        <a href="#popular-picks" data-category="bed" class="flex-none w-36 sm:w-44 text-center group cursor-pointer">
+          <div class="w-full aspect-[4/3] rounded-xl overflow-hidden bg-neutral-100 p-3 mb-3 border border-neutral-100 group-hover:border-red-200 transition-all shadow-sm group-hover:shadow-md">
+            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=400&q=80" alt="Storage Beds" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300">
+          </div>
+          <h3 class="font-bold text-neutral-800 text-sm sm:text-base group-hover:text-red-600 transition-colors">Storage Beds</h3>
+          <p class="text-neutral-400 text-xs mt-0.5">8 Products</p>
+        </a>
+
+        <!-- Category Item 4: Tables -->
+        <a href="#popular-picks" data-category="tables" class="flex-none w-36 sm:w-44 text-center group cursor-pointer">
+          <div class="w-full aspect-[4/3] rounded-xl overflow-hidden bg-neutral-100 p-3 mb-3 border border-neutral-100 group-hover:border-red-200 transition-all shadow-sm group-hover:shadow-md">
+            <img src="https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?auto=format&fit=crop&w=400&q=80" alt="Tables" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300">
+          </div>
+          <h3 class="font-bold text-neutral-800 text-sm sm:text-base group-hover:text-red-600 transition-colors">Tables</h3>
+          <p class="text-neutral-400 text-xs mt-0.5">16 Products</p>
+        </a>
+
+        <!-- Category Item 5: Storage -->
+        <a href="#popular-picks" data-category="storage" class="flex-none w-36 sm:w-44 text-center group cursor-pointer">
+          <div class="w-full aspect-[4/3] rounded-xl overflow-hidden bg-neutral-100 p-3 mb-3 border border-neutral-100 group-hover:border-red-200 transition-all shadow-sm group-hover:shadow-md">
+            <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=400&q=80" alt="Storage" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300">
+          </div>
+          <h3 class="font-bold text-neutral-800 text-sm sm:text-base group-hover:text-red-600 transition-colors">Storage</h3>
+          <p class="text-neutral-400 text-xs mt-0.5">14 Products</p>
+        </a>
+
+        <!-- Category Item 6: Media & Storage -->
+        <a href="#popular-picks" data-category="media-storage" class="flex-none w-36 sm:w-44 text-center group cursor-pointer">
+          <div class="w-full aspect-[4/3] rounded-xl overflow-hidden bg-neutral-100 p-3 mb-3 border border-neutral-100 group-hover:border-red-200 transition-all shadow-sm group-hover:shadow-md">
+            <img src="https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=400&q=80" alt="Media &amp; Storage" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300">
+          </div>
+          <h3 class="font-bold text-neutral-800 text-sm sm:text-base group-hover:text-red-600 transition-colors">Media &amp; Storage</h3>
+          <p class="text-neutral-400 text-xs mt-0.5">14 Products</p>
+        </a>
+
+        <!-- Category Item 7: Lighting -->
+        <a href="#popular-picks" data-category="lighting" class="flex-none w-36 sm:w-44 text-center group cursor-pointer">
+          <div class="w-full aspect-[4/3] rounded-xl overflow-hidden bg-neutral-100 p-3 mb-3 border border-neutral-100 group-hover:border-red-200 transition-all shadow-sm group-hover:shadow-md">
+            <img src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=400&q=80" alt="Lighting" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300">
+          </div>
+          <h3 class="font-bold text-neutral-800 text-sm sm:text-base group-hover:text-red-600 transition-colors">Lighting</h3>
+          <p class="text-neutral-400 text-xs mt-0.5">8 Products</p>
+        </a>
+      </div>
+
+      <!-- Horizontal Scroll Indicator Line -->
+      <div class="mt-4 flex justify-center items-center gap-2">
+        <div class="w-32 h-1 bg-neutral-200 rounded-full overflow-hidden">
+          <div id="cv-cat-scrollbar" class="w-1/3 h-full bg-red-600 rounded-full transition-all duration-150"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3 Promotional Cards Banner (As seen in video 00:16 - 00:18) -->
+<section class="py-12 bg-neutral-50/50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+      <!-- Promo 1: Sofa Design Collection 2026 -->
+      <div class="relative bg-white rounded-2xl overflow-hidden p-6 sm:p-8 flex flex-col justify-between border border-neutral-100 shadow-sm group min-h-[260px]">
+        <div class="relative z-10 max-w-[65%]">
+          <span class="text-xs font-semibold text-neutral-500 uppercase tracking-wider">Design For You</span>
+          <h3 class="text-xl sm:text-2xl font-bold text-neutral-900 mt-1 mb-4 leading-tight">Sofa Design Collection 2026</h3>
+          <a href="#popular-picks" data-category="sofas" class="inline-flex items-center gap-1.5 bg-red-600 hover:bg-red-700 text-white text-xs font-semibold px-4 py-2.5 rounded-full shadow-md transition-colors">
+            Shop Now
+          </a>
+        </div>
+        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=400&q=80" 
+             alt="Sofa Collection" 
+             class="absolute right-0 bottom-0 w-1/2 h-44 object-contain object-bottom-right group-hover:scale-105 transition-transform duration-300">
+      </div>
+
+      <!-- Promo 2: Top Lamp Brand Sale Up to 40% OFF -->
+      <div class="relative bg-[#3e2e28] text-white rounded-2xl overflow-hidden p-6 sm:p-8 flex flex-col justify-between shadow-sm group min-h-[260px]">
+        <div class="relative z-10 max-w-[65%]">
+          <span class="text-xs font-semibold text-amber-300 uppercase tracking-wider">Top Lamp Brand</span>
+          <h3 class="text-xl sm:text-2xl font-bold text-white mt-1 mb-4 leading-tight">Sale Up to 40% OFF</h3>
+          <a href="#popular-picks" data-category="lighting" class="inline-flex items-center gap-1.5 bg-red-600 hover:bg-red-700 text-white text-xs font-semibold px-4 py-2.5 rounded-full shadow-md transition-colors">
+            Shop Now
+          </a>
+        </div>
+        <img src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=400&q=80" 
+             alt="Lamp Brand Sale" 
+             class="absolute right-0 bottom-0 w-1/2 h-44 object-contain object-bottom-right group-hover:scale-105 transition-transform duration-300">
+      </div>
+
+      <!-- Promo 3: Top Trendy Chairs Collection 2025 -->
+      <div class="relative bg-white rounded-2xl overflow-hidden p-6 sm:p-8 flex flex-col justify-between border border-neutral-100 shadow-sm group min-h-[260px]">
+        <div class="relative z-10 max-w-[65%]">
+          <span class="text-xs font-semibold text-neutral-500 uppercase tracking-wider">New Products</span>
+          <h3 class="text-xl sm:text-2xl font-bold text-neutral-900 mt-1 mb-4 leading-tight">Top Trendy Chairs Collection 2025</h3>
+          <a href="#popular-picks" data-category="chairs" class="inline-flex items-center gap-1.5 bg-red-600 hover:bg-red-700 text-white text-xs font-semibold px-4 py-2.5 rounded-full shadow-md transition-colors">
+            Shop Now
+          </a>
+        </div>
+        <img src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&w=400&q=80" 
+             alt="Trendy Chairs" 
+             class="absolute right-0 bottom-0 w-1/2 h-44 object-contain object-bottom-right group-hover:scale-105 transition-transform duration-300">
+      </div>
+
+    </div>
+  </div>
+</section>
